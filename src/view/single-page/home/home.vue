@@ -72,9 +72,6 @@ export default {
   },
   mounted () {
     //
-    this.axios.get("/test/test").then(res=>{
-      console.log(res)
-    })
   }
 }
 </script>

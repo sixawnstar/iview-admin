@@ -370,6 +370,25 @@ export default [
     ]
   },
   {
+    path: '/tests',
+    name: 'tests',
+    meta: {
+      hideInBread: true
+    },
+    component: Main,
+    children: [
+      {
+        path: 'tesst_page',
+        name: 'tests_page',
+        meta: {
+          icon: 'ios-navigate',
+          title: '测试'
+        },
+        component: () => import('@/view/tests/index.vue')
+      }
+    ]
+  },
+  {
     path: '/multilevel',
     name: 'multilevel',
     meta: {

@@ -75,6 +75,7 @@ export default {
   },
   methods: {
     handleSelect (name) {
+      console.log(name,"nmae")
       this.$emit('on-select', name)
     },
     getOpenedNamesByActiveName (name) {
